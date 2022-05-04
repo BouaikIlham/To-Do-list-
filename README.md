@@ -3,6 +3,7 @@
 # To-Do-list-
 
 > Description the project.
+
 >In this project, I build a simple HTML list of To Do tasks. The list  styled according to the specifications listed later in this lesson. This simple web page  built using webpack and served by a webpack dev server.
 
 
