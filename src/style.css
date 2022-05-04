@@ -32,7 +32,7 @@ main {
 }
 
 .title {
-  color: rgba(202, 55, 55, 0.781);
+  color: gray;
   font-family: 'Open Sans', sans-serif;
   font-style: normal;
   font-weight: bold;
