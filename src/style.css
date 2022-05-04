@@ -58,6 +58,74 @@ main {
   font-style: italic;
 }
 
+.input-item {
+  outline: none;
+  color: #000;
+  border: none;
+  width: 90%;
+  font-size: 20px;
+  line-height: 80%;
+  background-color: transparent;
+}
+
+.btn-form {
+  font-size: 20px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding-right: 0;
+}
+
+.list-item {
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+}
+
+.list-item-first {
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #d3d3d3;
+}
+
+.list-item-second {
+  display: none;
+  justify-content: space-between;
+  justify-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #d3d3d3;
+  background-color: darksalmon;
+}
+
+.task-item {
+  color: #000;
+  font-size: 20px;
+  line-height: 80%;
+  width: 90%;
+}
+
+.task-check {
+  margin-right: 10px;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #a9a9a9;
+  cursor: pointer;
+}
+
+a {
+  color: #000;
+}
+
+.task-option {
+  cursor: all-scroll;
+}
+
+.task-option-remove {
+  cursor: pointer;
+}
+
 .footer {
   display: flex;
   justify-content: center;
