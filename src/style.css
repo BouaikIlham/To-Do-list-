@@ -79,7 +79,8 @@ main {
 .list-item {
   display: flex;
   flex-direction: row;
-  margin: 10px;
+  justify-content: space-between;
+  margin-left: 5px;
 }
 
 .list-item-first {
@@ -120,6 +121,7 @@ a {
 
 .task-option {
   cursor: all-scroll;
+  margin-right: 15px;
 }
 
 .task-option-remove {
