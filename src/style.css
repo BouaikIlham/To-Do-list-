@@ -1,154 +1,139 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Lato&family=Open+Sans&family=Poppins:wght@200;400;700&display=swap');
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
-  font-family: 'Open Sans', sans-serif;
-  font-style: normal;
-  margin: 0;
+  font-family: 'poppins', sans-serif;
+  background-color: #fff;
 }
 
-main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.main-heading {
+  text-align: center;
+  margin-bottom: 50px;
 }
 
-.list {
-  width: 100%;
-  margin-top: 10px;
+.todo-container {
+  width: 600px;
+  min-height: 150px;
+  margin: 0 auto;
+  margin-top: 50px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0 30px 60px -12px, rgba(0, 0, 0, 0.3) 0 18px 36px -18px;
 }
 
-.list-title {
-  display: flex;
-  justify-content: space-between;
-  justify-items: center;
-  padding: 20px;
-  border-bottom: 1px solid #d3d3d3;
-}
-
-.title {
-  color: gray;
-  font-family: 'Open Sans', sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 25px;
-  line-height: 80%;
-}
-
-.list-form {
-  display: flex;
-  justify-content: space-between;
-  justify-items: center;
-  padding: 20px;
-  border-bottom: 1px solid #d3d3d3;
-}
-
-.input-task {
-  outline: none;
-  color: rgb(5, 5, 5);
-  border: none;
-  width: 90%;
-  font-size: 20px;
-  line-height: 80%;
-  font-style: italic;
-}
-
-.input-item {
-  outline: none;
-  color: #000;
-  border: none;
-  width: 90%;
-  font-size: 20px;
-  line-height: 80%;
-  background-color: transparent;
-}
-
-.btn-form {
-  font-size: 20px;
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  padding-right: 0;
-}
-
-.list-item {
+.todo-header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-left: 5px;
+  align-items: center;
+  padding: 0 10px;
+  height: 50px;
 }
 
-.list-item-first {
-  display: flex;
-  justify-content: space-between;
-  justify-items: center;
-  padding: 20px;
-  border-bottom: 1px solid #d3d3d3;
-}
-
-.list-item-second {
-  display: none;
-  justify-content: space-between;
-  justify-items: center;
-  padding: 20px;
-  border-bottom: 1px solid #d3d3d3;
-  background-color: darksalmon;
-}
-
-.task-item {
-  color: #000;
+.title {
+  margin: 0;
   font-size: 20px;
-  line-height: 80%;
-  width: 90%;
+  color: gray;
 }
 
-.task-check {
-  margin-right: 10px;
-  width: 15px;
-  height: 15px;
-  border: 1px solid #a9a9a9;
-  cursor: pointer;
-}
-
-a {
-  color: #000;
-}
-
-.task-option {
-  cursor: all-scroll;
+.refresh {
   margin-right: 15px;
+  color: gray;
 }
 
-.task-option-remove {
+hr {
+  margin: 0;
+  color: gray;
+}
+
+.add-task-container {
+  height: 50px;
+  padding: 5px;
+}
+
+.add-task-input {
+  border: 0;
+  border-radius: 0;
+  width: 90%;
+  height: inherit;
+  padding-left: 10px;
+  outline: none;
+}
+
+.add-task-input::placeholder {
+  font-style: italic;
+  font-size: 15px;
+  font-weight: 200;
+  color: gray;
+}
+
+.add-task-btn {
+  display: inline;
+  border: 0;
+  border-radius: 0;
+  background-color: #fff;
+  height: inherit;
+  color: gray;
+}
+
+.add-task-btn:hover {
   cursor: pointer;
 }
 
-.footer {
+.tasks-container {
   display: flex;
-  justify-content: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  background-color: #d3d3d3;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  height: 50px;
+  padding: 5px;
 }
 
-.footer a {
-  text-decoration: none;
-  font-size: 20px;
+.check {
+  margin: 0 8px;
+  color: gray;
 }
 
-.footer a:hover {
+.check:hover {
+  cursor: pointer;
+}
+
+.description {
+  width: 85%;
+  margin: 0 2px;
+  border: 0;
+  height: inherit;
+  outline: none;
+}
+
+.completed {
+  text-decoration: line-through;
+}
+
+.edit-icon {
+  margin: 0 8px;
+  color: gray;
+}
+
+.edit-icon:hover {
+  cursor: move;
+}
+
+.clear {
+  height: 50px;
+  padding: 0;
+  position: relative;
+  bottom: 0;
+  text-align: center;
+}
+
+.clear-btn {
+  height: inherit;
+  width: 100%;
+  border: 0;
+  background-color: #eee;
+  color: gray;
+  font-size: 15px;
+}
+
+.clear-btn:hover {
+  cursor: pointer;
   text-decoration: underline;
-  color: darkcyan;
-}
-
-@media (min-width: 768px) {
-  .list {
-    width: 60%;
-    margin-top: 100px;
-  }
 }
