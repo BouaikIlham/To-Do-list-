@@ -13,7 +13,6 @@
 - HTML
 - CSS
 - JAVASCRIPT
-- webpack
 -  webpack dev server.
 
 
