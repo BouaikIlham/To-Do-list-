@@ -1,39 +1,19 @@
 import './style.css';
+import Task from './todo-list.js';
 
-const listBlock = document.querySelector('.list-block');
-const task = [
-  {
-    description: 'Wash the dishes',
-    completed: false,
-    index: 1,
-  },
-  {
-    description: 'Clean the house',
-    completed: false,
-    index: 2,
-  },
-  {
-    description: 'Cut the grass',
-    completed: false,
-    index: 3,
-  },
-];
-const div = [];
-const template = [];
-for (let i = 0; i < task.length; i += 1) {
-  div[i] = document.createElement('div');
-  div[i].className = 'list-item';
-  template[i] = `
-  <span class="task-item"><input type="checkbox" class="task-check" id="task-check" name="task-check"><label for="task-check">${task[i].description}</label></span>
-  <a href="#" class="task-option"><i class="fa fa-ellipsis-v"></i></a>
-  `;
+const addTaskInput = document.querySelector('.add-task-input');
+const addBtn = document.querySelector('.add-task-btn');
+const mainTasksCont = document.querySelector('.main-tasks');
+const clearComplete = document.querySelector('.clear-btn');
 
-  div[i].innerHTML = template[i];
-  listBlock.appendChild(div[i]);
+addBtn.addEventListener('click', Task.addTask);
+addTaskInput.addEventListener('keydown', (e) => {
+  if (e.key === 'Enter') {
+    Task.addTask(e);
+  }
+});
 
-  task.sort((a, b) => {
-    if (a.index < b.index) return -1;
-    if (a.index > b.index) return 1;
-    return 0;
-  });
-}
+mainTasksCont.addEventListener('click', Task.deleteTask);
+clearComplete.addEventListener('click', Task.clearComplete);
+document.addEventListener('DOMContentLoaded', Task.showTasks);
+document.addEventListener('DOMContentLoaded', Task.actions);

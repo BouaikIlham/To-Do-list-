@@ -1,32 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/9dfa895fe8.js" crossorigin="anonymous"></script>
-    <title>To-Do List</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To Do List</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body>
-    <main>
-        <div class="list">
-          <div class="list-title">
-            <span class="title">Demo</span>
-            <a href="#"><i class="fa fa-refresh" aria-hidden="true"></i></a>        
-          </div>
-          <div class="list-entry">
-            <form class="list-form" id="list-form">
-              <input class="input-task" type="text" name="task" id="task" minlength="3" placeholder="Add to you list...">
-              <button class="btn-form" type="submit">↵</button>
-            </form>
-          </div>
-          <div class="list-block">
-    
-          </div>
-          <div class="footer">
-            <a href="#" id="clear-completed">Clear all completed</a>
-          </div>
-        </div>
-      </main>
+  <div class="todo-container">
+    <div class="todo-header">
+      <h2 class="title">Demo</h2>
+      <span class="refresh material-icons">refresh</span>
+    </div>
+    <hr>
+    <form action="#" method="post" name="taskForm" class="add-task-container">
+      <input class="add-task-input" type="text" name="description" id="addTask" placeholder="Add to your list..." required>
+      <span class="add-task-btn material-icons">keyboard_return</span>
+    </form>
+    <hr>
+    <div class="main-tasks"></div>
+    <footer class="clear">
+      <button type="button" class="clear-btn">Clear all completed</button>
+    </footer>
+  </div>
 </body>
 </html>
